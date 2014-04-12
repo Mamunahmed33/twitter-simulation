@@ -1,6 +1,7 @@
 package edu.univdhaka.iit.twitter.domain;
 
-import java.util.Date;
+import java.sql.Date;
+
 
 /**
  * Created by Bazlur Rahman Rokon on 12/28/13.

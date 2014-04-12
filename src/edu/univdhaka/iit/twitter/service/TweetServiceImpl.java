@@ -4,7 +4,7 @@ import edu.univdhaka.iit.twitter.domain.Tweet;
 import edu.univdhaka.iit.twitter.domain.User;
 import edu.univdhaka.iit.twitter.repository.TwitterFactory;
 
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 /**
@@ -19,7 +19,7 @@ public class TweetServiceImpl implements TweetService {
         Tweet tweet = new Tweet();
         tweet.setId(TwitterFactory.getGeneratedTweetId());
         tweet.setTweetText(tweetText);
-        tweet.setTimestamp(new Date());
+        tweet.setTimestamp(new Date(0));
         tweet.setTweetBy(postedBy);
 
         TwitterFactory.getTweetList().add(tweet);
